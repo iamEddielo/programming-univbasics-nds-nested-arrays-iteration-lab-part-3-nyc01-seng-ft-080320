@@ -10,9 +10,10 @@ def join_nested_strings(src)
       if src[row_index][element_index] == " "
       new_string << src[row_index][element_index]
       end
+      element_index += 1 
     end
-    element_index += 1 
+     row_index += 1
   end 
-  row_index += 1
+  
   new_string
 end
